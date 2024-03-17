@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Workshop</title>
+</head> 
+<body>
+    <header>
+        <button id="openNewPage2" class="large-button">Educational Workshop</button>
+        <div>
+            <button id="openNewPage">About</button>
+            <button id="openNewsPage">Services</button>
+            <button id="openNewPages">Contact</button>
+            <button id="openNewPage1">Testimony</button>
+        </div>
+    </header>
+
+    <section>
+        <h2>Welcome To The Educational Workshop</h2>
+        <p>Hello, this is the Educational Workshop,</p>
+        <p>A 60-day workshop led by Dr. Punnet Kumar Mishra.</p>
+        <p>In this workshop, you will learn:</p>
+        <p>Maths: Vedic & Logical.</p>
+        <p>Science: Biology, Chemistry, and Physics.</p>
+        <p>English: Vocals & Grammar.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tutoring Services. All rights reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById("openNewPage").addEventListener("click", function() {
+            window.location.href = "../about.html";
+        });
+
+        document.getElementById("openNewsPage").addEventListener("click", function() {
+            window.location.href = "../services.html";
+        });
+
+        document.getElementById("openNewPages").addEventListener("click", function() {
+            window.location.href = "../contact.html";
+        });
+
+        document.getElementById("openNewPage1").addEventListener("click", function() {
+            window.location.href = "../review.html";
+        });
+
+        document.getElementById("openNewPage2").addEventListener("click", function() {
+            window.location.href = "../index.html";
+        });
+
+
+    </script>
+
+</body>
+</html>
