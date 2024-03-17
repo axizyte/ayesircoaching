@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="review.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <button id="openNewPage2" class="large-button">Educational Workshop</button>
+        <div>
+            <button id="openNewPage">About</button>
+            <button id="openNewsPage">Services</button>
+            <button id="openNewPages">Contact</button>
+            <button id="openNewPage1">Testimony</button>
+        </div>
+    </header>
+    <section>
+        <h2>
+            You reviews will be displayed here
+        </h2>
+        <p>
+            please contct us at gmail at the gmail section
+        </p>
+    </section>
+    <!--<form id="reviewForm">
+                <textarea id="userReview" placeholder="Feel Free To Write Your Testimony"></textarea>
+                <br>
+                <button type="button" class="review-button" onclick="submitReview()">Submit Testimony</button>
+            </form>
+            
+            <div class="reviews" id="reviews">
+            </div>
+            <script>
+                        function submitReview() {
+            var userReview = document.getElementById('userReview').value;
+            
+            if (userReview.trim() === '') {
+                alert('Please enter a Testimony.');
+                return;
+            }
+            
+            var reviewDiv = document.createElement('div');
+            reviewDiv.className = 'review';
+            reviewDiv.textContent = userReview;
+            
+            document.getElementById('reviews').appendChild(reviewDiv);
+            document.getElementById('reviewForm').reset();
+        }-->
+    <script>
+        document.getElementById("openNewPage").addEventListener("click", function () {
+            window.location.href = "about.html";
+        });
+
+        document.getElementById("openNewsPage").addEventListener("click", function () {
+            window.location.href = "services.html";
+        });
+
+        document.getElementById("openNewPages").addEventListener("click", function () {
+            window.location.href = "contact.html";
+        });
+
+        document.getElementById("openNewPage1").addEventListener("click", function () {
+            window.location.href = "review.html";
+        });
+
+        document.getElementById("openNewPage2").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Tutoring Services. All rights reserved</p>
+    </footer>
+</body>
+
+</html>
